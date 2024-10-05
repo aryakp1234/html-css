@@ -1,0 +1,491 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5656;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_header .nav_logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav__links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__links a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .nav__links a:hover {
+    color: #f76c6c;
+  }
+  
+  .nav__menu__btn {
+    display: none;
+  }
+  
+  /* Header */
+  .header {
+    background-image: url('./images/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  .header__container h1 {
+    font-size: 48px;
+  }
+  
+  .header__container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sections */
+  .section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .section__subheader {
+    color: #f76c6c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  
+  .section__header {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  .section__description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .btn {
+    background-color: #f76c6c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Booking Section */
+  .booking {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+  }
+  
+  .booking__container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .booking form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input__group {
+    margin-bottom: 20px;
+  }
+  
+  .input__group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input__group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  .about__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .about__image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .about__card {
+    text-align: center;
+  }
+  
+  .about__card h4 {
+    margin: 15px 0;
+    font-size: 24px;
+  }
+  
+  .about__card p {
+    color: #666;
+  }
+  
+  /* Room Section */
+  .room__content {
+    background-color: white;
+  }
+  
+  .room__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .room__card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .room__card__details {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room__card__details h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .room__card__details h3 {
+    font-size: 28px;
+    color: #f76c6c;
+  }
+  
+  /* Feature Section */
+  .feature__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .feature__card {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature__card h4 {
+    margin: 15px 0;
+  }
+  
+  .feature__card p {
+    color: #666;
+  }
+  
+  /* Menu Section */
+  .menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .menu__items li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .menu__items li img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu__details h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* News Section */
+  .news__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .news__card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .news__card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  /* .footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+  }
+  
+  .footer__col {
+    margin-bottom: 40px;
+  }
+  
+  .footer__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer__socials li a {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer__bar {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+   */
+
+  .menu__banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 40px;
+  }
+  
+  .menu__banner li {
+    list-style: none;
+    text-align: center;
+    flex-basis: 23%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu__banner li:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__banner span {
+    font-size: 2rem;
+    color: #ff914d;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .menu__banner h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .menu__banner p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0;
+  }
+  
+/* footer */
+
+.footer {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    padding: 60px 0;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .footer__col {
+    flex-basis: 30%;
+  }
+  
+  .footer__logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer__logo span {
+    display: block;
+    line-height: 1.2;
+  }
+  
+  .section__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #dddddd;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer__socials li {
+    list-style: none;
+  }
+  
+  .footer__socials a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__socials a:hover {
+    color: #ff914d;
+  }
+  
+  .footer__col h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ff914d;
+  }
+  
+  .footer__links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer__links a {
+    color: #dddddd;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__links a:hover {
+    color: #ff914d;
+  }
+  
+  .footer__links li span {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #ff914d;
+  }
+  
+  .footer__links li div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .footer__links h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .footer__links p {
+    margin: 0;
+    color: #dddddd;
+    font-size: 0.9rem;
+  }
+  
+  .footer__bar {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #1e1e1e;
+    font-size: 0.9rem;
+    color: #888888;
+  }
+  
+  .footer__bar span {
+    color: #ff914d;
+  }
+  
