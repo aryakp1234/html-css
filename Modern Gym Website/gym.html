@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxfit Gym</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="gym.css">
+    <script src="script.js"></script>
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <h1>MaxFit</h1>
+            <div class="nav-links">
+                <a href="#classes">Classes</a>
+                <a href="#trainers">Trainers</a>
+                <a href="#membership">Membership</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Life</h1>
+            <p>Join the ultimate fitness experience</p>
+            <a href="#membership" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+    <section id="classes" class="classes">
+        <h2 class="section-title">Our Classes</h2>
+        <div class="class-grid">
+            <div class="class-card">
+                <img src="/pictures/premium_photo-1664474563253-02b680ca192d.avif" alt="HIIT" class="class-image">
+                <div class="class-info">
+                    <h3 class="class-title">HIIT Training</h3>
+                    <p>High-intensity interval training to boost your metabolism and burn fat.</p>
+                </div>
+            </div>
+            <div class="class-card">
+                <img src="/pictures/premium_photo-1726096574710-2a86b16303b5.avif" alt="Yoga" class="class-image">
+                <div class="class-info">
+                    <h3 class="class-title">Power Yoga</h3>
+                    <p>Find your inner balance while building strength and flexibility.</p>
+                </div>
+            </div>
+            <div class="class-card">
+                <img src="/pictures/istockphoto-914755448-2048x2048.jpg" alt="Strength" class="class-image">
+                <div class="class-info">
+                    <h3 class="class-title">Strength Training</h3>
+                    <p>Build muscle and increase your strength with our expert trainers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trainers" class="trainer-section">
+        <h2 class="section-title">Meet Our Trainers</h2>
+        <div class="trainer-grid">
+            <div class="trainer-card">
+                <img src="/pictures/trainer1.webp" alt="Trainer 1" class="trainer-image">
+                <h3>John Doe</h3>
+                <p>HIIT Specialist</p>
+            </div>
+            <div class="trainer-card">
+                <img src="/pictures/trainer3.jpeg" alt="Trainer 2" class="trainer-image">
+                <h3>June Smith</h3>
+                <p>Yoga Instructor</p>
+            </div>
+            <div class="trainer-card">
+                <img src="/pictures/trainer2.webp" alt="Trainer 3" class="trainer-image">
+                <h3>Mike Johnson</h3>
+                <p>Strength Coach</p>
+            </div>
+        </div>
+    </section>
+    <section id="membership" class="membership-calculator">
+        <h2 class="section-title">Calculate Your Membership</h2>
+        <form class="calculator-form">
+            <select id="membership-type">
+                <option value="basic">Basic Membership</option>
+                <option value="premium">Premium Membership</option>
+                <option value="elite">Elite Membership</option>
+            </select>
+            <select id="duration">
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="12">12 Months</option>
+            </select>
+            <button type="button" onclick="calculatePrice()">Calculate Price</button>
+        </form>
+        <div id="price-display"></div>
+    
+   
+    <div id="joinModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Join MaxFit Gym</h2>
+            <form class="join-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="https://wa.me/1234567890" class="cta-button whatsapp-button floating-whatsapp">
+        <i class="fab fa-whatsapp"></i> Chat with us
+    </a>
+    <div class="success-message"></div>
+</section>
+    
+    <div id="scroll-top">↑</div>
+
+</body>
+</html>
